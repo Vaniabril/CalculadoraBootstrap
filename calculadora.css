@@ -1,0 +1,69 @@
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80%;
+}
+   
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 8px solid rgb(82, 70, 129);
+    font-size: 2rem;
+
+
+
+}
+.calculadora-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 2px  black;
+    overflow: auto;
+
+}
+.calculadora-keypad{
+display: flex;
+width: 100%;
+
+}
+.keypad-numeros{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid  rgb(117, 45, 110) 
+}
+.keypad-button:hover{
+    filter: brightness(70%);
+    transition: filter .25s;
+}
+.keypad-button.blue{
+    background-color: aquamarine;
+}
+.keypad-button.large{
+    width: 50%;
+}
+.keypad-button.dark{
+    background-color: lightgray;
+}
